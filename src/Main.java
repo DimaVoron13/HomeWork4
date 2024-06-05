@@ -3,9 +3,8 @@ public class Main {
         System.out.println("Задание 1");
         byte age = 21;
         if (age >= 18){
-    System.out.println("Если возраст человека равен " + age + " то он совершеннолетний");
-        }
-        else {
+            System.out.println("Если возраст человека равен " + age + " то он совершеннолетний");
+        } else {
             System.out.println("Если возраст человека равен " + age + " то он не достиг совершеннолетия");
         }
 
@@ -13,8 +12,7 @@ public class Main {
         byte temperature = -5;
         if (temperature < 5){
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
-        }
-        else {
+        } else {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
 
@@ -22,8 +20,7 @@ public class Main {
         short speed = 30;
         if (speed < 60){
             System.out.println("Если скорость " + speed + " , то можно ездить спокойно");
-        }
-        else {
+        } else {
             System.out.println("Если скорость " + speed + " , то придется заплатить штраф");
         }
 
@@ -32,14 +29,11 @@ public class Main {
         byte ageHuman = 25;
         if (ageHuman >= 2 && ageHuman <= 6){
             System.out.println("Если возраст человека равен " + ageHuman + " то ему нужно ходить в детский сад");
-        }
-        if (ageHuman >= 7 && ageHuman <= 17){
+        } else if (ageHuman >= 7 && ageHuman <= 17){
             System.out.println("Если возраст человека равен " + ageHuman + " то ему нужно ходить в школу");
-        }
-        if (ageHuman >= 18 && ageHuman <= 24){
+        } else if (ageHuman >= 18 && ageHuman <= 24){
             System.out.println("Если возраст человека равен " + ageHuman + " то его место в университете");
-        }
-        if (ageHuman > 24){
+        } else {
             System.out.println("Если возраст человека равен " + ageHuman + " то ему пора ходить на работу");
         }
 
@@ -48,11 +42,9 @@ public class Main {
         byte childAge = 14;
         if (childAge < 5){
             System.out.println("Если возраст ребенка равен " + childAge + " , то ему нельзя кататься на аттракционе");
-        }
-        if (childAge >= 5 && childAge < 14){
+        } else if (childAge >= 5 && childAge < 14){
             System.out.println("Если возраст ребенка равен " + childAge + " , то ему можно кататься только в сопровождении взрослого");
-        }
-        if (childAge >= 14){
+        } else if (childAge >= 14){
             System.out.println("Если возраст ребенка равен " + childAge + " , то ему можно кататься без сопровождения взрослого");
         }
 
@@ -65,27 +57,23 @@ public class Main {
         int remainStandPlaces = totalPlaces - (passenger + remainSeatPlaces);
         if (passenger > totalPlaces){
             System.out.println("Если в пассажиров в вагоне " + passenger + " , то вагон переполнен");
-        }
-        else if (passenger <= seatPlaces){
+        } else if (passenger <= seatPlaces){
             System.out.println("Если в пассажиров в вагоне " + passenger + " , то в вагоне еще есть ещё " + remainSeatPlaces + " сидячих мест и " + remainStandPlaces + " стоячих мест");
-        }
-        else if (passenger > seatPlaces && passenger < totalPlaces){
+        } else if (passenger > seatPlaces && passenger < totalPlaces){
             System.out.println("Если в пассажиров в вагоне " + passenger + " ,то в вагоне еще есть ещё " + (totalPlaces- passenger) + " стоячих мест");
         }
 
         System.out.println("Задание 7");
 
-        int one = 10;
-        int two = 5;
-        int three = 3;
-        if (one > two && one > three){
-            System.out.println(one + " больше " + two + " и больше " + three);
-        }
-        else if (two > one && two > three){
-            System.out.println(two + " больше " + one + " и больше " + three);
-        }
-        else if (three > two && three > one){
-            System.out.println(three + " больше " + two + " и больше " + one);
+        int one = 2;
+        int two = 15;
+        int three = 1;
+        if (one >= two && one >= three){
+            System.out.println(one + " - самое большое число");
+        } else if (two >= three){
+            System.out.println(two + " - самое большое число");
+        } else{
+            System.out.println(three + " - самое большое число");
         }
     }
 }
